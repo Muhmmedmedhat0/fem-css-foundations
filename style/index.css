@@ -1,0 +1,55 @@
+@import './base.css';
+
+.body--primary {
+  background-color: var(--color-primary);
+  color: var(--color-text-primary);
+}
+.main .main__heading {
+  font-size: 128px;
+  font-weight: bold;
+  margin: 0;
+}
+
+.main .main__sub-heading {
+  font-size: 40px;
+  font-weight: bold;
+  margin: 0;
+  padding: 0 0px;
+}
+
+.main .button-container {
+  margin: 20px 0px;
+}
+
+.main .button--primary {
+  background-color: var(--color-button-secondary-bg);
+  color: var(--color-primary);
+}
+.main .button--primary:hover {
+  background-color: var(--color-button-primary-bg);
+  color: var(--color-text-primary);
+}
+
+.main .button--secondary {
+  background-color: var(--color-button-primary-bg);
+  color: var(--color-text-primary);
+}
+
+.main .button--secondary:hover {
+  background-color: var(--color-button-secondary-bg);
+  color: var(--color-primary);
+}
+
+.button--icon {
+  vertical-align: middle;
+}
+
+@media (width < 1000px) {
+  .main .main__heading {
+    font-size: 36px;
+  }
+
+  .main .main__sub-heading {
+    font-size: 20px;
+  }
+}

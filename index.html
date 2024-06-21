@@ -1,29 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style/index.css" />
     <title>CSS Day</title>
-</head>
-<body>
-    <header>
-        <a href="/">CSS Day</a>
-        <div>
-            <nav>
-                <ul>
-                    <li><a href="#">About</a></li>
-                    <li><a href="speakers.html">Speakers</a></li>
-                    <li><a href="#">Contact</a></li>
-                </ul>
-            </nav>
-            <img src="./icons/shopping-cart.svg" alt="Shopping cart">
-        </div>
+  </head>
+  <body class="body body--primary ">
+    <header class="header">
+      <img src="./icons/menu.svg" alt="Right arrow" class="menu--icon" />
+      <img src="./icons/close-menu.svg" alt="Right arrow" class="close--icon" />
+
+      <a href="/" class="header__logo">CSS Day</a>
+      <nav class="nav">
+        <ul class="nav__list">
+          <li class="nav__list--item"><a href="#">About</a></li>
+          <li class="nav__list--item"><a href="speakers.html">Speakers</a></li>
+          <li class="nav__list--item"><a href="#">Contact</a></li>
+        </ul>
+      </nav>
+      <img
+        src="./icons/shopping-cart.svg"
+        alt="Shopping cart"
+        class="shopping-cart" />
     </header>
-    <main>
-        <p>CSS Day is a conference for developers who love beautiful websites.</p>
-        <p>4-8 June 2023</p>
-        <button>Buy Tickets <img src="./icons/arrow-right.svg" alt="Right arrow"></button>
+    <main class="main">
+      <p class="main__heading">
+        CSS Day is a conference for developers who love beautiful websites.
+      </p>
+      <p class="main__sub-heading">4-8 June 2023</p>
+      <div class="button-container">
+        <button class="button button--primary">
+          Buy Tickets
+          <img
+            src="./icons/arrow-right.svg"
+            alt="Right arrow"
+            class="button--icon" />
+        </button>
+        <button class="button button--secondary">Contact Us</button>
+      </div>
     </main>
-</body>
+    <script src="./js/main.js"></script>
+  </body>
 </html>
